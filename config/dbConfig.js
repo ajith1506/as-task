@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 //Connect to MongoDB
 const connectDB = async () => {
-  await mongoose.connect(process.env.DB_HOST);
+  await mongoose.connect("mongodb://localhost:27017/user-task");
   console.log("MongoDB Connected...");
 };
 
